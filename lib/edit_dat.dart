@@ -61,7 +61,7 @@ class EditData extends StatelessWidget {
                           .updateName(data);
                     } else {
                       Provider.of<User>(context, listen: false)
-                          .updateNumber(data);
+                          .updateNumber(int.parse(data));
                     }
                   }
 

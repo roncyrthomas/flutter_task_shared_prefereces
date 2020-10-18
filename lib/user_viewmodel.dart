@@ -8,7 +8,7 @@ final picker = ImagePicker();
 
 class User with ChangeNotifier {
   String name = "Roncy R Thomas";
-  String pno = "9048329299";
+  int pno = 9048329299;
   String image = "images/86518.png";
   String imagePath;
   String isDefaultImage = "true";
@@ -21,7 +21,7 @@ class User with ChangeNotifier {
   ImageProvider<Object> getImage() =>
       isDefaultImage == "true" ? AssetImage(image) : FileImage(File(imagePath));
   String getName() => name;
-  String getNumber() => pno;
+  int getNumber() => pno;
 
   void updateName(String name) async {
     details = await SharedPreferences.getInstance();
@@ -31,10 +31,10 @@ class User with ChangeNotifier {
     notifyListeners();
   }
 
-  void updateNumber(String pno) async {
+  void updateNumber(int pno) async {
     details = await SharedPreferences.getInstance();
     this.pno = pno;
-    details.setString("pno", pno);
+    details.setInt("pno", pno);
     print(details.get('name'));
     notifyListeners();
   }
@@ -59,8 +59,8 @@ class User with ChangeNotifier {
 
   void readNumber() async {
     final prefs = await SharedPreferences.getInstance();
-    final value = prefs.getString('pno') ?? '';
-    value == '' ? pno = '9048329299' : pno = value;
+    final value = prefs.getInt('pno') ?? 0;
+    value == 0 ? pno = 9048329299 : pno = value;
     notifyListeners();
   }
 
