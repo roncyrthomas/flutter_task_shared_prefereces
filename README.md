@@ -17,9 +17,9 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Screenshots
 
-![Screenshot](screenshots/1.jpg)
-![Screenshot](screenshots/2.jpg)
-![Screenshot](screenshots/3.jpg)
-![Screenshot](screenshots/4.jpg)
-![Screenshot](screenshots/5.jpg)
-![Screenshot](screenshots/6.jpg)
+![Screenshot](screenshots/Screenshot_20201018-172629.jpg)
+![Screenshot](screenshots/Screenshot_20201018-172716.jpg)
+![Screenshot](screenshots/Screenshot_20201018-172730.jpg)
+![Screenshot](screenshots/Screenshot_20201018-172739.jpg)
+![Screenshot](screenshots/Screenshot_20201018-172752.jpg)
+![Screenshot](screenshots/Screenshot_20201018-172802.jpg)
